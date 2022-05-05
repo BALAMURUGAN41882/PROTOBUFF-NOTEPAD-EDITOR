@@ -1,0 +1,17 @@
+syntax="proto3";
+package usern;
+message userdata
+{
+  optional string name = 1;
+  optional string location=2;
+  optional string email=3;
+  optional string password=4;
+  optional int32 id=5;
+  optional string address=6;
+  optional string phonenumber=7;
+}
+
+message userarray{
+   repeated userdata userlist=1;
+  optional int32 usercount=2;
+}

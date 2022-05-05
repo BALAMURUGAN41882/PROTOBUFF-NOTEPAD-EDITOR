@@ -1,0 +1,15 @@
+syntax="proto3";
+package projectfile;
+
+message Project 
+{
+   optional int32 currversion=1;
+   optional int32 proid=3;
+   optional string createfile=4;
+optional string fileName=2;
+}
+message prolist
+{
+repeated Project projectname=1;
+optional int32 projectcount=2;
+}

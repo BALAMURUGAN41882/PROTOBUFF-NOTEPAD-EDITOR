@@ -1,0 +1,17 @@
+syntax="proto3";
+package vern;
+message verfile
+{
+ 
+  optional int32 version=2;
+  optional int32 vercount=3;
+  optional string vertime=4;
+  repeated string vertxt=5;
+}
+message verdata
+{
+  repeated verfile verlist=1;
+  optional string vername= 3;
+  optional int32 currentversion=2;
+
+}
